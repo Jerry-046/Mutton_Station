@@ -1,0 +1,115 @@
+{% extends 'navbar.html' %}
+{% block body %}
+{% load static %}
+<div class="bg-gray-100">
+<div class="py-16 lg:py-8">
+    <div class="relative mx-auto max-w-8xl px-4 sm:px-6 lg:px-16">
+      <div class="relative overflow-hidden rounded-xl bg-black py-24 px-8 shadow-2xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-16">
+        <div class="absolute inset-0 opacity-50 filter">
+          <img src="{% static 'images/final.jpg' %}" alt="" class="h-full w-full object-cover">
+        </div>
+        <div class="relative lg:col-span-1">
+        <div class="flex items-center">
+          <img class="h-12 w-auto float-left" src="{% static 'images/restro.png' %}" alt="">
+          <p class="text-white text-2xl font-bold font-extrabold">Mutton Station</p>
+        </div>
+          <blockquote class="mt-6 text-white">
+            <p class="text-xl font-medium sm:text-2xl">We Serve the best Mutton Sekuwa in the town with a good hospitality and a family friendly environment.We focus on the hygiene of food and satisfaction of costumer.</p>
+            <footer class="mt-6">
+              <p class="flex flex-col font-medium">
+                <span>Ramesh Karki</span>
+                <span>Founder of Mutton Station</span>
+              </p>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Features About Mutton Station</h2>
+        <p class="mt-4 text-lg text-gray-500">We Serve the best Mutton Sekuwa in the town with a good hospitality and a family friendly environment.</p>
+      </div>
+      <dl class="mt-12 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            <p class="ml-9 text-lg font-medium leading-6 text-gray-900">Experienced good Chef</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">We have a good chef who can make a big difference in the quality of food and overall dining experience at a restaurant.</dd>
+        </div>
+  
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            <p class="ml-9 text-lg font-medium leading-6 text-gray-900">Family Friendly Space</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">We have a family-friendly space in a restaurant is important for creating a welcoming environment for all types of guests.</dd>
+        </div>
+  
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            <p class="ml-9 text-lg font-medium leading-6 text-gray-900">Photohraphs</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">We have a Photohrapher who have great way to capture high-quality photos of the dishes, the ambiance, and the guests enjoying themselves.</dd>
+        </div>
+  
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+            <p class="ml-9 text-lg font-medium leading-6 text-gray-900">Space for Birthday Celebration and other Events</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">We Organize the Birthday Celebration nad other different events.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  
+<div class="pt-16 lg:py-24">
+    <div class="bg-purple-600 pb-16 lg:relative lg:z-10 lg:pb-0">
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+        <div class="relative lg:-my-8">
+          <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+          <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0">
+            <div class="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+              <img class="object-cover lg:h-full lg:w-full" src="{% static 'images/owner.jpg' %}" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
+          <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+            <blockquote>
+              <div>
+                <svg class="h-12 w-12 text-white opacity-25" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="mt-6 text-2xl font-medium text-white">Our focus is on creating a warm and inviting atmosphere with excellent service. We believe in using the freshest ingredients to create healthy and delicious dishes. Our goal is to become a hub for the community, providing a space for people to come together and create lasting memories.</p>
+              </div>
+              <footer class="mt-6">
+                <p class="text-base font-medium text-white">Ramesh Karki</p>
+                <p class="text-base font-medium text-indigo-100">Founder of Mutton Station</p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endblock%}
+  Mutton Station is a legendary restaurant serving customers for decades. The cozy ambiance is adorned with rustic wooden furniture, soft lighting, and vintage photos. The menu features delicious mutton dishes such as grilled chops, stews, and curries. The staff is known for their warm hospitality and impeccable service.We are a must-visit destination for any meat lover in the area.
