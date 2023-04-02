@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Item.apps.ItemConfig',
+    'User',
     'tailwind',
     'theme',
      'django_browser_reload',
@@ -120,9 +121,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 MEDIA_URL='/images/'
-STATICFILES_DIRS = [Path.joinpath(BASE_DIR,'static')]
+STATICFILES_DIRS = [
+    Path.joinpath(BASE_DIR,'static')
+    ]
+MEDIA_ROOT = Path.joinpath(BASE_DIR,'static/images')
+STATIC_ROOT = Path.joinpath(BASE_DIR,'staticfiles')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
